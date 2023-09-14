@@ -1,0 +1,16 @@
+
+  <form #searchForm="ngForm" (ngSubmit)="onSearch(searchForm)">  
+    <input type="text" name="search" placeholder="search" [(ngModel)]="searchKey"> 
+    <br/> 
+    <br/> 
+    <label>
+      <input type="radio" name="selectedType" value="ALL" [(ngModel)]="selectedType"> ALL
+    </label>
+    <label>
+      <input type="radio" name="selectedType" value="ETHEREUM" [(ngModel)]="selectedType"> ETHEREUM
+    </label>
+    <label>
+      <input type="radio" name="selectedType" value="BITCOIN" [(ngModel)]="selectedType"> BITCOIN
+    </label>
+    <input type="submit" value="submit"> 
+  </form>

@@ -1,0 +1,30 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">objectId</th>
+            <th scope="col">tag</th>
+            <th scope="col">contract</th>
+            <th scope="col">slug</th>
+            <th scope="col">deploymentAddress</th>
+            <th scope="col">recordType</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{user.objectId}}</td>
+            <td>{{user.tag}}</td>
+            <td>{{user.contract}}</td>
+            <td>{{user.slug}}</td>
+            <td>{{user.deploymentAddress}}</td>
+            <td>{{user.recordType}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
